@@ -1,0 +1,68 @@
+.btn {
+	padding: 18px 31px;
+	border: 0;
+	text-transform: uppercase;
+	font-size: 14px;
+	background-color: lighten($formBG, 100%);
+	color: $formBG;
+	outline: none;
+	&:focus {
+		background-color: pink;
+		color: red;
+	}
+}
+.section {
+	box-sizing: border-box;
+	background-color: $formBG;
+	padding: 50px 80px;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	justify-content: space-between;
+}
+.form {
+	display: flex;
+}
+.title {
+	font-size: 24px;
+	text-transform: uppercase;
+}
+.section__sub__title {
+	margin-bottom: 29px;
+	font-size: $fontSizeTitle;
+	color: lighten($titleColor, 100%);
+	line-height: 48px;
+}
+.section__form {
+	margin-left: 15px;
+	box-sizing: border-box;
+	padding: 18px 20px;
+	background-color: lighten($formBG, 100%);
+	&__title {
+		margin-bottom: 18px;
+		line-height: 36px;
+		color: $titleColor;
+	}
+	&__text {
+		margin-bottom: 29px;
+		line-height: 24px;
+		color: #999;
+	}
+	&__btn {
+		padding: 18px 48px;
+		background-color: $formBG;
+		color: lighten($formBG, 100%);
+	}
+	&__email {
+		box-sizing: border-box;
+		border: 1px solid rgba(0, 0, 0, 0.1);
+		padding: 19px;
+		flex-grow: 1;
+		outline: none;
+		color: $titleColor;
+	}
+	&__email::placeholder {
+		text-transform: uppercase;
+		color: #cdcdcd;
+		font-size: 12px;
+	}
+}

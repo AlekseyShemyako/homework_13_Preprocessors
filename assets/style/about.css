@@ -1,0 +1,114 @@
+body {
+  margin: 0; }
+
+h1,
+h2,
+h3,
+p {
+  margin: 0; }
+
+.box {
+  background-color: violet;
+  max-width: 1300px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; }
+
+.main {
+  flex-grow: 1; }
+
+.btn {
+  padding: 18px 31px;
+  border: 0;
+  text-transform: uppercase;
+  font-size: 14px;
+  background-color: white;
+  color: #7beec7;
+  outline: none; }
+  .btn:focus {
+    background-color: pink;
+    color: red; }
+
+.section {
+  box-sizing: border-box;
+  background-color: #7beec7;
+  padding: 50px 80px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: space-between; }
+
+.form {
+  display: flex; }
+
+.title {
+  font-size: 24px;
+  text-transform: uppercase; }
+
+.section__sub__title {
+  margin-bottom: 29px;
+  font-size: 30px;
+  color: white;
+  line-height: 48px; }
+
+.section__form {
+  margin-left: 15px;
+  box-sizing: border-box;
+  padding: 18px 20px;
+  background-color: white; }
+  .section__form__title {
+    margin-bottom: 18px;
+    line-height: 36px;
+    color: #60606e; }
+  .section__form__text {
+    margin-bottom: 29px;
+    line-height: 24px;
+    color: #999; }
+  .section__form__btn {
+    padding: 18px 48px;
+    background-color: #7beec7;
+    color: white; }
+  .section__form__email {
+    box-sizing: border-box;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 19px;
+    flex-grow: 1;
+    outline: none;
+    color: #60606e; }
+  .section__form__email::placeholder {
+    text-transform: uppercase;
+    color: #cdcdcd;
+    font-size: 12px; }
+
+ul {
+  margin: 0;
+  padding: 0; }
+
+li {
+  list-style-type: none; }
+
+a {
+  color: #60606e;
+  text-decoration: none; }
+
+.footer {
+  padding: 50px 80px 49px;
+  text-transform: uppercase;
+  font-size: 14px;
+  color: #60606e;
+  display: flex;
+  justify-content: space-between; }
+  .footer__list {
+    display: flex; }
+    .footer__list__link:not(:last-child):after {
+      content: '-';
+      margin-left: 20px; }
+    .footer__list__link {
+      margin-right: 20px; }
+  .footer__copyright {
+    margin-bottom: 29px; }
+  .footer__link__icon {
+    display: flex;
+    justify-content: flex-end; }
+    .footer__link__icon__list:not(:last-child) {
+      margin-right: 15px; }
